@@ -4,6 +4,7 @@ const port = 3000;
 
 const requestHandler = (request, response) => {
   console.log(request.url);
+  require('./textToSpeech');
   response.end('Hello Node.js Server!')
 }
 
